@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 - Aula 4</title>
+</head>
+<body>
+    <script>
+        
+        // ▪ Dados uma sequência de 5 números inteiros. Calcule a soma de todos os números da 
+        // sequência.
+
+        let i = 0;
+
+        let numeroDigitado;
+        let soma = 0;
+
+        while (i < 5) {
+            
+            numeroDigitado = +prompt("Digite um numero: ");
+            console.log(numeroDigitado, soma);
+
+            // soma = soma + numeroDigitado;
+            soma += numeroDigitado;
+
+            i++;
+        }
+
+        console.log("soma total: " + soma);
+        
+    </script>
+</body>
+</html>

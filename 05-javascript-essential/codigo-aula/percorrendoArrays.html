@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percorrendo Arrays</title>
+</head>
+<body>
+    <script>
+        
+        let frutas = ["Maçã", "Pera", "Morango" , "Melancia", "Pera"];
+        console.log(frutas);
+
+        let qtdFrutas = frutas.length;
+
+        // FOR CLÁSSICO - FOR INDEXADO
+        // for (let i = 0; i < frutas.length; i++) {
+        //     console.log(`Pos.: ${i} | Valor ${frutas[i]}`)
+        // }
+
+        // FOR IN
+        // for (let posicao in frutas) {
+        //     console.log(posicao, frutas[posicao]);
+        // }
+
+        // FOR OF
+        for (let valor of frutas) {
+            // console.log(frutas.indexOf(valor), valor);
+        }
+
+
+        // CONTINUAÇÃO DA CENA DOS PRÓXIMOS CAPITULOS
+
+        // RECUPEREI DO MEU BANCO DE DADOS...
+        let gradeProdutos = [
+            ["Nome 1", 10, "Descrição 1", "https://www.fiap.com.br/wp-content/themes/fiap2016/images/sharing/fiap.png"],
+            ["Nome 2", 20, "Descrição 2", "https://www.fiap.com.br/wp-content/themes/fiap2016/images/sharing/fiap.png"],
+            ["Nome 3", 30, "Descrição 3", "https://www.fiap.com.br/wp-content/themes/fiap2016/images/sharing/fiap.png"],
+        ];
+
+        console.table(gradeProdutos);
+
+        console.log(gradeProdutos);
+        console.log(gradeProdutos[1]);
+
+        console.log(" ");
+        for (let i = 0; i < gradeProdutos.length; i++){
+            // console.log(gradeProdutos[i][2]);
+
+            for (let valor of gradeProdutos[i]){
+                console.log(valor);
+            }
+
+            console.log(" ---------------  ");
+
+        }
+        
+    </script>
+</body>
+</html>
+

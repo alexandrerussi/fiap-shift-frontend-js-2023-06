@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos - Aula 7</title>
+</head>
+<body>
+    <script>
+        
+        // {CHAVE: VALOR}
+
+        let pessoa1 = {
+            nome: "Alexandre",
+            idade: 24,
+            email: "ale@email.com"
+        }
+
+        let pessoa2 = {
+            nome: "Fulano",
+            idade: 42,
+            email: "fulano@email.com"
+        }
+
+        console.log(pessoa1);
+        console.log(pessoa1.nome);
+        console.log(pessoa1["nome"]);
+
+
+        // FOR IN EM OBJETOS, RETORNA AS CHAVES
+        for (let chave in pessoa1) {
+            console.log(chave, pessoa1[chave]);
+        }
+
+        let pessoas = [pessoa1, pessoa2];
+        console.log(pessoas);
+
+
+        // FUNCAO QUE CRIA OBJETOS -- FACTORY FUNCTION
+
+        function criarPessoa(nome, idade, email) {
+            return {
+                nome,
+                idade,
+                email
+            }
+        }
+
+        console.log(" ");
+
+        let pessoa3 = criarPessoa("Ciclano", 33, "ciclano@email.com");
+        console.log(pessoa3);
+
+        pessoas.push(pessoa3);
+        console.log(pessoas);
+
+    </script>
+</body>
+</html>
+

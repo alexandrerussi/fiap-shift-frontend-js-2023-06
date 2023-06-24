@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Aula 2</title>
+</head>
+<body>
+    <script>
+        
+        // ▪ Escreva um algoritmo que recebe dois números e um caractere (representando uma 
+        // das operações matemáticas (+, -, *, /) 
+        // ▪ O programa deve calcular o valor final de acordo com a operação selecionada.
+        // ▪ Ou seja, se a entrada for 5, 6 e *, então seu programa dever mostrar 30.
+
+        let numA = +prompt("1º num: ");
+        let numB = +prompt("2º num: ");
+        let operacao = prompt("Digite a operação matemática (+, -, *, /)");
+
+        console.log(numA, numB, operacao);
+
+        let total = 0;
+
+        switch (operacao) {
+            case "+":
+                total = numA + numB;
+                break;
+            case "-":
+                total = numA - numB;
+                break;
+            case "*":
+                total = numA * numB;
+                break;
+            case "/":
+                total = numA / numB;
+                break;
+            default:
+                console.log("Operação inválido");
+        }
+
+        console.log("Total da soma é: " + total);
+
+    </script>
+</body>
+</html>

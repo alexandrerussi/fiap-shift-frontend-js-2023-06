@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopos - Aula 6</title>
+</head>
+<body>
+    <script>
+        
+        // ESCOPOS COM FUNÇÃO
+
+        var nomeGlobal = "Alexandre VAR GLOBAL";
+        // console.log(nomeGlobal);
+
+        let nomeGlobalLet = "LET GLOBAL";
+        // console.log(nomeGlobalLet);
+
+
+        function um() {
+            var nomeUm = "VAR UM";
+            let nomeUmLet = "LET UM";
+
+            function dois() {
+                var idade = 23;
+                let idadeLet = "idade let"
+                // console.log(nomeUm);
+                // console.log(nomeUmLet);
+                // console.log(idadeLet);
+                
+            }
+            
+            
+            dois();
+        }
+
+        um();
+
+
+        // ESCOPOS COM OUTRAS ESTRUTURAS (IF...)
+
+        function tres() {
+
+            if (true) {
+                var idade = 24;
+                let idadeLet = 25;
+                console.log(idadeLet);
+            }
+            console.log(idade);
+
+        }
+
+        tres();
+
+    </script>
+</body>
+</html>
+

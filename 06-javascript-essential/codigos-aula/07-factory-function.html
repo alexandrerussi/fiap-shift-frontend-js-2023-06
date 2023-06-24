@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Function - Aula 6</title>
+</head>
+<body>
+    <script>
+
+        // FACTORY FUNCTION -- FUNÇÃO PARA CRIAR OBJETOS
+
+        function criarUsuario(id, nome, email, senha) {
+            return {
+                id,
+                nome,
+                email,
+                senha
+            }
+        }
+
+
+        // PARECE MUITO UM CONSTRUTOR DE UMA CLASSE ....
+
+        let usuario1 = criarUsuario("1", "Fulano", "fulano@email.com", "fulano123");
+        console.log(usuario1);
+
+        let usuario2 = criarUsuario("2", "Ciclano", "ciclano@email.com", "ciclano123");
+        console.log(usuario2);
+
+        let usuarios = [usuario1, usuario2];
+
+
+    </script>
+</body>
+</html>
+

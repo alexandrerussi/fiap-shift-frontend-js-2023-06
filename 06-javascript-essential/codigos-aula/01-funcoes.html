@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Aula 6</title>
+</head>
+<body>
+    <script>
+        
+        // -------------------------------------------
+        // PARTE 1
+        // -------------------------------------------
+
+        // DECLARAR UMA FUNÇÃO
+        // function saudacao() {
+        //     console.log("Seja bem-vindo!");
+        // }
+
+        // // // CHAMAR MINHA FUNÇÃO
+        // saudacao();
+
+
+        // -------------------------------------------
+        // PARTE 2 -- FUNC QUE SÓ EXECUTA ALGO -- N TEM RETORNO E N TEM PARAMETROS
+        // -------------------------------------------
+
+        // function saudacao() {
+        //     console.log("Seja bem-vindo!");
+
+        //     let nome = prompt("Digite seu nome: ");
+        //     let idade = +prompt("Digite sua idade: ");
+
+        //     if (idade >= 18) {
+        //         console.log(`Olá, ${nome}! Você é maior de idade.`);
+        //     } else {
+        //         console.log(`Olá ${nome}! Você é menor de idade.`);
+        //     }
+        // }
+
+        // saudacao();
+
+
+        // -------------------------------------------
+        // PARTE 3 -- FUNÇÕES COM PARÂMETROS / ARGUMENTOS E SEM RETORNO
+        // -------------------------------------------
+
+        // function saudacaoComArgs(nome, idade, teste=2) {
+        //     console.log(`Seja bem-vindo, ${nome}! Você tem ${idade} anos. ${teste}`);
+        // }
+
+        // saudacaoComArgs("Alexandre", 24, "oi");
+        // saudacaoComArgs("Maria Eduarda", 19);
+        // saudacaoComArgs("Brenno", 32);
+
+        // -------------------------------------------
+        // PARTE 4 -- FUNÇÃO SEM PARÂMETRO COM RETORNO
+        // -------------------------------------------
+
+        // function sorteioNumeros() {
+        //     return Math.round(Math.random() * 10);
+        // }
+        // let numSorteado = sorteioNumeros();
+        // console.log(numSorteado);
+
+
+        // function retornoTexto() {
+        //     return "Texto Configurado";
+        // }
+        // let textoRetornado = retornoTexto();
+        // console.log(textoRetornado);
+
+        // -------------------------------------------
+        // PARTE 5 -- FUNÇÃO COM PARÂMETRO e COM RETORNO
+        // -------------------------------------------
+
+        // function somar(a, b) {
+        //     let soma = a + b;
+        //     return soma;
+        // }
+
+        // let resultado = somar(1, 4);
+        // console.log(resultado);
+
+        function saudacao(nome) {
+            return `Oi, ${nome}!`
+        }
+        
+        let nomeDig = prompt("Digite seu nome: ");
+
+        console.log(saudacao(nomeDig));
+
+
+    </script>
+</body>
+</html>
+

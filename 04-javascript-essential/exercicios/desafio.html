@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Aula 4</title>
+</head>
+<body>
+
+    <!-- Exiba a resposta na tag <p> -->
+    <p id="resposta"></p>
+
+    <script>
+        
+        // ▪ Escreva um programa que faça o computador “pensar” em um número inteiro entre 
+        // 10 e 50 e peça para o usuário tentar descobrir qual foi o número escolhido pelo 
+        // computador. O programa deverá escrever na tela se o usuário venceu ou perdeu.
+
+        let min = 10;
+        let max = 50;
+
+        let jogarNovamente = "";
+
+        do {
+            // sorteando entre 0 e 40, depois eu somo + 10  >> sorteando entre 10 e 50
+            let numAleatorio = Math.round((Math.random() * (max - min)) + min);
+            console.log(numAleatorio);
+
+            // VERIFICANDO SE USUÁRIO ESTÁ DIGITANDO ENTRE 10 E 50
+            let numUsuario;
+            do {
+                numUsuario = +prompt("Tente adivinhar o numero sorteado entre 10-50");
+            } while (numUsuario < 10 || numUsuario > 50);
+
+            // IF TERNÁRIO PARA ARMAZENAR A INFO SE GANHOU OU PERDEU
+            let status = numAleatorio == numUsuario ? "Venceu" : "Perdeu";
+
+            // EXIBINDO RESULTADO
+            console.log(status);
+            document.getElementById("resposta").innerHTML = `Número sorteado: ${numAleatorio} | Palpite: ${numUsuario} | Você ${status}`;
+
+            // VERIFICANDO SE USUÁRIO IRÁ JOGAR NOVAMENTE
+            jogarNovamente = prompt("Digite [S] para jogar novamente").toUpperCase();
+
+        } while (jogarNovamente == "S");
+
+        console.log("FIM DE JOGO");
+        
+    </script>
+</body>
+</html>

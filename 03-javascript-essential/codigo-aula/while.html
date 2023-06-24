@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While - Aula 3</title>
+</head>
+<body>
+    <script>
+        
+        // console.log("Produto");
+        // console.log("Produto");
+        // console.log("Produto");
+        // console.log("Produto");
+        // console.log("Produto");
+        // console.log("Produto");
+        // console.log("Produto");
+
+        // ESTRUTURA DE REPETIÇÃO WHILE!!
+
+        let contProd = 0;
+
+        while (contProd < 10) {
+            contProd++;
+
+            // MODIFICADORES DE FLUXO
+
+            if (contProd == 3 || contProd == 5) {
+                continue; // isso é um modificador de fluxo
+            }
+
+            if (contProd == 7) {
+                break;
+            }
+
+            console.log(`Produto ${contProd}`);
+        }
+
+        console.log("FIM");
+
+        // DESAFIO 1: COMO EU FAÇO PARA IR DE 10 ATÉ 0
+        // DESAFIO 2: COMO VERIFICAR QUE O USUÁRIO DIGITOU ALGO ERRADO E SOLICITAR NOVAMENTE
+        
+    </script>
+</body>
+</html>

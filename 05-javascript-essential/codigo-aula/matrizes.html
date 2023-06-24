@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrizes</title>
+</head>
+<body>
+    <script>
+        
+        let linha1 = [1, 2];
+        let linha2 = [4, 5];
+        let linha3 = [6, 9];
+
+        let matriz = [
+            linha1,
+            linha2,
+            linha3
+        ]
+        console.table(matriz);
+
+        // ACESSANDO AS LINHAS
+        console.log(matriz[0]);
+        console.log(matriz[1]);
+        console.log(matriz[2]);
+
+        // ACESSANDO A CELULA DE VALOR 9
+        let linha = 2;
+        let coluna = 1;
+
+        console.log(matriz[linha][coluna]);
+
+        // ------------------------------
+        // PERCORRER UMA MATRIZ
+        // ------------------------------
+
+        let qtdLinhas = matriz.length;
+        console.log(`Qtd de linhas: ${qtdLinhas}`);
+
+        let qtdColunas;
+        // let qtdColunas = matriz[0].length;
+        // console.log(`Qtd de colunas: ${qtdColunas}`);
+
+        console.log(" -------------------- ");
+
+        for (let i = 0; i < qtdLinhas; i++) {
+            console.log(matriz[i], matriz[i].length);
+
+            qtdColunas = matriz[i].length;
+
+            for (let j = 0; j < qtdColunas; j++) {
+                console.log(matriz[i][j]);
+            }
+            
+            console.log(" ");
+        }
+
+    </script>
+</body>
+</html>
+

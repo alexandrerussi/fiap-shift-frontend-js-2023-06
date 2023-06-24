@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        
+        // ARRAYS SÃO LISTAS!!!!
+        // ARMAZENAM DIVERSOS DADOS DIFERENTES
+        // QTS DADOS VC QUISER
+
+        // 1ª FORMA DE DECLARAR ARRAYS
+        let lista1 = new Array([20, 30, 40]);
+        // console.log(lista1);
+
+        // 2ª FORMA DE DECLARAR ARRAYS
+        let lista2 = [2, 3, 4];
+        // console.log(lista2);
+
+        let frutas = ["Maçã", "Pera", "Morango", "Melancia"];
+        // console.log(frutas);
+
+        // frutas[0] = Maçã
+        // frutas[1] = Pera
+        // frutas[2] = Morango
+        // frutas[3] = Melancia
+
+        // console.log(frutas[1]);
+
+        let numSorteados = [1, 40, 30, 20, 12, 32];
+        // console.log(numSorteados);
+
+        let lista = [12, "Texto", true, false, 10.3, [2, 5], [true, false]];
+        // console.log(lista);
+
+        // lista[5]     = [2, 5]
+        // lista[5][1]  = 5
+
+        // console.log(lista[5][0]);
+
+        let gradeProdutos = [
+            ["Nome 1", 10.2, "Descrição 1"],
+            ["Nome 2", 1.20, "Descrição 2"],
+            ["Nome 3", 2.20, "Descrição 3"]
+        ];
+
+
+        // console.log(gradeProdutos);
+        
+        // console.log(gradeProdutos[0][0]);
+        // console.log(gradeProdutos[1][0]);
+        // console.log(gradeProdutos[2][0]);
+
+        // for  -- cena dos proximos capitulos
+
+
+        // console.log(lista.toString());
+
+        console.log(frutas);
+
+        // INSERIR NOVO ELEMENTO NO FINAL DO ARRAY
+        frutas.push("Abacaxi");
+        console.log(frutas);
+
+        // INSERIR NOVO ELEMENTO NO COMEÇO DO ARRAY
+        frutas.unshift("Banana");
+        console.log(frutas);
+
+        // REMOVER O ÚLTIMO ELEMENTO DO ARRAY
+        frutas.pop();
+        frutas.pop();
+        console.log(frutas);
+
+        // REMOVER O PRIMEIRO ELEMENTO DO ARRAY
+        frutas.shift();
+        frutas.shift();
+        console.log(frutas);
+
+        let frutasNovas = ["Carambola", "Mexerica"];
+        console.log(frutasNovas);
+
+        let frutasJuntas = frutasNovas.concat(frutas);
+        console.log(frutasJuntas);
+
+        frutas.push("Melão");
+        frutas.push("Banana");
+        console.log(frutas);
+
+        // frutas[0] = Pera
+        // frutas[1] = Morango
+        // frutas[2] = Melão
+        // frutas[3] = Banana
+
+        let retorno = frutas.splice(0, 3, "X", "Y", "Z", 123, 1);
+        console.log(retorno);
+        console.log(frutas);
+
+        console.log(" ");
+
+        let retornoSlice = frutas.slice(0, 3);
+        console.log(retornoSlice);
+        console.log(frutas)
+
+        
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 7 - Aula 4</title>
+</head>
+<body>
+    <script>
+        
+        // ▪ Um professor quer saber quantos alunos de uma sala de 20 tiveram nota maior do 
+        // que a média. Faça um programa onde o professor informe a média da turma e as 
+        // notas de cada um dos 20 alunos e, ao final, seja exibido quantos alunos tiveram nota 
+        // superior à média e quantos tiveram nota inferior à média.
+
+        let media = +prompt("Digite a media da turma: ");
+
+        let nota;
+        let qtdSuperiorMedia = 0, qtdInferiorMedia = 0;
+
+        for (let i = 0; i < 5; i++) {
+            nota = +prompt(`Digite a nota do aluno ${i}`)
+
+            if (nota > media) {
+                qtdSuperiorMedia++;
+            } else if (nota < media) {
+                qtdInferiorMedia++;
+            }
+        }
+
+        console.log(`Qtd de notas superior a media: ${qtdSuperiorMedia}`);
+        console.log(`Qtd de notas inferior a media: ${qtdInferiorMedia}`);
+
+    </script>
+</body>
+</html>
+

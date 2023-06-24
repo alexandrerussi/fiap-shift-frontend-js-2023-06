@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 - Aula 6</title>
+</head>
+<body>
+    <script>
+        
+        // ▪ Faça um programa que tenha uma função chamada calcularArea(), que receba as 
+        // dimensões de um terreno retangular como argumento (largura e comprimento) e 
+        // mostre a área do terreno.
+
+        // function calcularArea(largura, comprimento) {
+        //     let area = largura * comprimento;
+        //     console.log(`A área é : ${area}`);
+        // }
+
+        // function calcularArea(largura, comprimento) {
+        //     return largura * comprimento;
+        // }
+
+        let calcularArea = (largura, comprimento) => largura * comprimento;
+
+
+        // ---------------------------------------------
+
+        let larguraDig = +prompt("Digite a largura do terreno");
+        let comprimentoDig = +prompt("Digite o comprimento do terreno");
+
+        let area = calcularArea(larguraDig, comprimentoDig);
+        console.log(`A área é : ${area} m²`);
+
+    </script>
+</body>
+</html>
+

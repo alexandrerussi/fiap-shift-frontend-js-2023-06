@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Nativos</title>
+</head>
+<body>
+    <script>
+
+        // OBJETO MATH
+
+        // let valor = 2.000001;
+        // console.log(Math.floor(valor));
+        // console.log(Math.round(valor));
+        // console.log(Math.ceil(valor));
+
+        // console.log(Math.PI);
+
+        // ---------------------------------
+        // NÚMEROS SORTEADOS
+        // ---------------------------------
+
+        // let numAleatorio = Math.random();
+        // console.log(`Num sorteado:  ${numAleatorio}`);
+
+        // let numSort10 = numAleatorio * 10;
+        // console.log(`NumSort * 10 = ${numSort10}`);
+        
+        // let numSortRound = Math.floor(numSort10);
+        // console.log(`Num. sorteado arredondado = ${numSortRound}`);
+
+        // console.log(numSortRound + 1);  // ENTRE 1 E 10
+
+        // COMO SORTEAR INTERVALOS?!?!
+        // COMO SORTEAR ENTRE 10 E 50
+        // MINIMO = 10
+        // MAXIMO = 50
+
+
+
+        
+        // ------------------------------------------
+        // OBJETOS NATIVOS DE STRING
+        // ------------------------------------------
+
+        // let nome = "AlexAndre";
+
+        // let nomeLower = nome.toLowerCase(); // COLOCANDO EM MINÚSCULO
+        // console.log(nomeLower);
+
+        // console.log(nome.toUpperCase()); // EXIBINDO NOME EM MAIÚSCULO
+
+        // console.log(nome.replace("A", "B"));
+
+        // let frase = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+        // let fraseSemEspaco = frase.replace(" ", "");
+        // console.log(fraseSemEspaco);
+
+
+        // posicao      letra
+        // 0            B
+        // 1            a
+        // 2            n
+        // 3            a
+        // 4            n
+        // 5            a
+
+        // let fruta = "Banana";
+        // console.log(fruta.indexOf("a"));
+        // console.log(fruta.charAt(0));
+
+        // let faculdade = "FIAP Tecnologia";
+        // // console.log(faculdade.slice(5));
+        // // console.log(faculdade.slice(5, 8));
+
+        // console.log(faculdade.split(" "));
+
+
+
+        // ------------------------------------------
+        // OBJETOS NATIVOS DE DATA
+        // ------------------------------------------
+
+        // 0    DOM
+        // 1    SEG
+        // 2    TER
+        // 3    QUA
+        // 4    QUI
+        // 5    SEX
+        // 6    SAB
+
+        const dataAtual = new Date();
+        console.log(dataAtual.getFullYear());
+        console.log(dataAtual.getDay());
+
+        let diaConsulta = 4;
+
+        if (dataAtual.getDay() == diaConsulta) {
+            console.log("HOJE É O DIA DA CONSULTA.. SISTEMA, DISPARA UM SMS");
+        }
+
+        // 0+1=1    JAN
+        // 1+1=2    FEV
+        // 5+1=6    JUN
+
+        const mes = dataAtual.getMonth() + 1;
+        console.log(mes);
+
+        // let semestre = "";
+        // if (mes <= 6) {
+        //     semestre = "Primeiro Semestre";
+        // } else {
+        //     semestre = "Segundo Semestre";
+        // }
+        // console.log(semestre);
+
+        // IF TERNÁRIO - só uso em casos "binários" -- SIM ou NAO -- TRUE ou FALSE
+
+        let semestre = mes <= 6 ? "Primeiro Semestre" : "Segundo Semestre";
+        console.log(semestre);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8 - Aula 2 - Javascript - Lógica de Programação</title>
+</head>
+<body>
+    <!--
+        ▪ Escrever um algoritmo para determinar o consumo médio de um automóvel sendo 
+        fornecida a distância total percorrida pelo automóvel e o total de combustível gasto.
+        ▪ Dê sua resposta em km por litro de combustível (km/Litro)
+        ▪ Caso a autonomia do veículo esteja abaixo de 8 km/L, exiba a mensagem: 
+            ▪ “Esse carro bebe hein!”
+        ▪ Senão, exiba a mensagem:
+            ▪ “Autonomia legal”
+    -->
+
+    <!-- Exiba a resposta na tag <p> -->
+    <p id="resposta"></p>
+    <p id="autonomia"></p>
+    <script>
+        // Digite o código JavaScript aqui
+
+        let distTotal = +prompt("Digite a quilometragem total");
+        let litrosCombustivel = +prompt("Digite a qtd de litros");
+        
+        let kmPorLitro = distTotal / litrosCombustivel;
+
+        console.log("Dist total: ", distTotal, typeof(distTotal));
+        console.log("Consumo médio: ", kmPorLitro, typeof(kmPorLitro));
+
+        document.getElementById("resposta").innerHTML = `${kmPorLitro} (km/Litro)`;
+
+        if (kmPorLitro < 8) {
+            document.getElementById("autonomia").innerHTML = `Esse carro bebe hein 🤪`;
+        } else {
+            document.getElementById("autonomia").innerHTML = `Autonomia legal`;
+        }
+        
+    </script>
+</body>
+</html>
